@@ -1,0 +1,32 @@
+html, body {
+    margin-left: auto;
+    margin-right: auto;
+    width: 75%;
+    font-family: 'Poiret One', cursive;
+    ;
+}
+
+body {
+    background-color: #e19c41;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    color: #000000;
+}
+
+a {
+    color: #020075;
+}
+
+h6 {
+    font-size: 25px;
+}
+
+.center {
+    padding: 200px 0;
+    text-align: center;
+}
