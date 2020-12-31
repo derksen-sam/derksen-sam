@@ -3,7 +3,6 @@ html, body {
     margin-right: auto;
     width: 75%;
     font-family: 'Poiret One', cursive;
-    ;
 }
 
 body {
@@ -14,7 +13,11 @@ h1 {
     font-size: 60px;
 }
 
-h1, h2, h3, h4, h5, h6, p {
+h2 {
+    font-size: 25px;
+}
+
+h1, h2 {
     color: #000000;
 }
 
@@ -22,11 +25,7 @@ a {
     color: #020075;
 }
 
-h6 {
-    font-size: 25px;
-}
-
 .center {
-    padding: 200px 0;
+    padding-top: 25%;
     text-align: center;
 }
