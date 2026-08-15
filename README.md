@@ -1,6 +1,6 @@
 # Sam Derksen - Personal Site
 
-A single-page personal site covering my work at TeamDynamix, focused on iPaaS and Conversational AI (CAI) integrations.
+A single-page personal site covering my work at TeamDynamix.
 
 **Live site:** [https://derksen-sam.github.io/derksen-sam/](https://derksen-sam.github.io/derksen-sam/)
 
