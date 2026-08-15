@@ -18,7 +18,7 @@ jobs:
       - name: Run HTMLHint
         run: |
           npm install -g htmlhint
-          htmlhint index.html --rules alt-require,id-unique,tag-pair,attr-lowercase
+          htmlhint *.html --rules alt-require,id-unique,tag-pair,attr-lowercase
 
   check-links:
     runs-on: ubuntu-latest
