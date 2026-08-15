@@ -1,5 +1,9 @@
 # Sam Derksen - Personal Site
 
+[![HTML Validation](https://github.com/derksen-sam/derksen-sam/actions/workflows/html-validate.yml/badge.svg)](https://github.com/derksen-sam/derksen-sam/actions/workflows/html-validate.yml)
+[![Lighthouse CI](https://github.com/derksen-sam/derksen-sam/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/derksen-sam/derksen-sam/actions/workflows/lighthouse.yml)
+[![License: MIT](https://img.shields.io/github/license/derksen-sam/derksen-sam)](LICENSE)
+
 A single-page personal site covering my work at TeamDynamix.
 
 **Live site:** [https://derksen-sam.github.io/derksen-sam/](https://derksen-sam.github.io/derksen-sam/)
