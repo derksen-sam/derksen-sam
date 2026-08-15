@@ -33,12 +33,13 @@ This repo runs a few GitHub Actions workflows to keep the site in shape:
 
 ```
 .
-├── index.html                          # main site - markup, styles, and script
+├── index.html                          # main site — markup, styles, and script
 ├── 404.html                            # custom not-found page
 ├── .github/
 │   ├── workflows/
 │   │   ├── html-validate.yml           # HTML/link validation
-│   │   └── lighthouse.yml              # Lighthouse CI audits
+│   │   ├── lighthouse.yml              # Lighthouse CI audits
+│   │   └── site-health.yml             # daily uptime check
 │   └── dependabot.yml                  # weekly Actions version checks
 └── README.md
 ```
