@@ -1,0 +1,21 @@
+name: Site Health Check
+
+on:
+  schedule:
+    - cron: '0 13 * * *'
+  workflow_dispatch:
+
+jobs:
+  health-check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check site is reachable
+        run: |
+          url="https://derksen-sam.github.io/derksen-sam/"
+          status=$(curl -s -o /dev/null -w "%{http_code}" "$url")
+          echo "Received status code: $status"
+          if [ "$status" -ne 200 ]; then
+            echo "Site check failed — got status $status instead of 200"
+            exit 1
+          fi
+          echo "Site is up (status $status)"
