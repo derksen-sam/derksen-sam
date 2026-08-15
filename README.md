@@ -40,4 +40,4 @@ This repo runs a few GitHub Actions workflows to keep the site in shape:
 
 ## License
 
-No license specified - all rights reserved. This is a personal site, not intended for reuse. If you'd like to make it reusable under an open license (e.g. MIT), add a `LICENSE` file and update this section.
+[MIT](LICENSE) — free to use, copy, modify, and reuse, with attribution.
