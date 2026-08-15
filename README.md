@@ -2,6 +2,7 @@
 
 [![HTML Validation](https://github.com/derksen-sam/derksen-sam/actions/workflows/html-validate.yml/badge.svg)](https://github.com/derksen-sam/derksen-sam/actions/workflows/html-validate.yml)
 [![Lighthouse CI](https://github.com/derksen-sam/derksen-sam/actions/workflows/lighthouse.yml/badge.svg)](https://github.com/derksen-sam/derksen-sam/actions/workflows/lighthouse.yml)
+[![Site Health Check](https://github.com/derksen-sam/derksen-sam/actions/workflows/site-health.yml/badge.svg)](https://github.com/derksen-sam/derksen-sam/actions/workflows/site-health.yml)
 [![License: MIT](https://img.shields.io/github/license/derksen-sam/derksen-sam)](LICENSE)
 
 A single-page personal site covering my work at TeamDynamix.
