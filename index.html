@@ -1,22 +1,16 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='4' fill='%230B2942'/><circle cx='16' cy='16' r='8' fill='%235EEAD4'/></svg>">
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap" media="print" onload="this.media='all'">
 <noscript>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&display=swap">
 </noscript>
-
   <title>Sam Derksen - TeamDynamix iPaaS, Conversational AI (CAI), &amp; Work Management Expert</title>
   <meta name="description"
     content="Sam Derksen is a TeamDynamix technical support consultant focused on iPaaS integrations and Conversational AI (CAI).">
@@ -36,32 +30,27 @@
       --font-body: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
       --radius: 3px;
       --maxw: 960px;
-    }
-
+}
     *,
     *::before,
     *::after {
       box-sizing: border-box;
-    }
-
+}
     html {
       scroll-behavior: smooth;
-    }
-
+}
     @media (prefers-reduced-motion: reduce) {
       html {
         scroll-behavior: auto;
-      }
-
+}
       *,
       *::before,
       *::after {
         animation-duration: 0.001ms !important;
         animation-iteration-count: 1 !important;
         transition-duration: 0.001ms !important;
-      }
-    }
-
+}
+}
     body {
       margin: 0;
       background: var(--bg);
@@ -74,9 +63,8 @@
       font-size: 17px;
       line-height: 1.6;
       -webkit-font-smoothing: antialiased;
-    }
-
-    .skip-link {
+}
+.skip-link {
       position: absolute;
       left: -9999px;
       top: 0;
@@ -87,27 +75,22 @@
       font-weight: 700;
       z-index: 100;
       border-radius: 0 0 var(--radius) 0;
-    }
-
-    .skip-link:focus {
+}
+.skip-link:focus {
       left: 0;
-    }
-
+}
     :focus-visible {
       outline: 2px solid var(--accent);
       outline-offset: 3px;
       border-radius: 2px;
-    }
-
+}
     a {
       color: var(--accent);
-    }
-
+}
     a:hover {
       color: #9BF3E4;
-    }
-
-    .eyebrow {
+}
+.eyebrow {
       font-family: var(--font-display);
       font-size: 0.78rem;
       letter-spacing: 0.14em;
@@ -116,17 +99,15 @@
       display: inline-flex;
       align-items: center;
       gap: 0.6em;
-    }
-
-    .eyebrow::before {
+}
+.eyebrow::before {
       content: "";
       width: 0.6em;
       height: 0.6em;
       background: var(--accent);
       display: inline-block;
       border-radius: 1px;
-    }
-
+}
     h1,
     h2,
     h3 {
@@ -134,37 +115,32 @@
       font-weight: 700;
       line-height: 1.15;
       margin: 0;
-    }
-
-    .wrap {
+}
+.wrap {
       max-width: var(--maxw);
       margin: 0 auto;
       padding: 0 clamp(1.25rem, 4vw, 2rem);
-    }
-
+}
     header.site-header {
       padding: 1.5rem 0;
       background: #fff;
       border-bottom: 1px solid #E2E8ED;
-    }
-
+}
     header.site-header .wrap {
       display: flex;
       justify-content: space-between;
       align-items: center;
       gap: 1rem;
       flex-wrap: wrap;
-    }
-
-    .site-header .name {
+}
+.site-header .name {
       font-family: var(--font-display);
       font-size: 1rem;
       letter-spacing: 0.02em;
       color: var(--bg);
       font-weight: 500;
-    }
-
-    .site-header nav ul {
+}
+.site-header nav ul {
       list-style: none;
       display: flex;
       gap: 1.75rem;
@@ -172,70 +148,59 @@
       padding: 0;
       font-family: var(--font-display);
       font-size: 0.85rem;
-    }
-
-    .site-header nav a {
+}
+.site-header nav a {
       color: #1C3A52;
       text-decoration: none;
       border-bottom: 1px solid transparent;
       padding-bottom: 2px;
       font-weight: 500;
-    }
-
-    .site-header nav a:hover {
+}
+.site-header nav a:hover {
       color: var(--accent-dim);
       border-color: var(--accent-dim);
-    }
-
+}
     /* HERO / SIGNATURE DIAGRAM */
-    .hero {
+.hero {
       padding: clamp(3rem, 8vw, 6rem) 0 clamp(2.5rem, 6vw, 4rem);
-    }
-
-    .hero .wrap {
+}
+.hero .wrap {
       display: grid;
       gap: 2.5rem;
       align-items: center;
-    }
-
+}
     @media (min-width: 860px) {
-      .hero .wrap {
+.hero .wrap {
         grid-template-columns: 1.1fr 0.9fr;
-      }
-    }
-
-    .hero h1 {
+}
+}
+.hero h1 {
       font-size: clamp(1.9rem, 4.2vw, 2.9rem);
       margin: 0.9rem 0 1.1rem;
       max-width: 16ch;
-    }
-
-    .hero p.lede {
+}
+.hero p.lede {
       color: var(--text-muted);
       font-size: 1.05rem;
       max-width: 48ch;
-    }
-
-    .hero .actions {
+}
+.hero .actions {
       margin-top: 1.75rem;
       display: flex;
       gap: 1rem;
       flex-wrap: wrap;
-    }
-
+}
     @media (max-width: 639px) {
-  .hero .actions {
+.hero .actions {
     flex-direction: column;
     align-items: center;
-  }
-
-  .hero .actions .btn {
+}
+.hero .actions .btn {
     width: 100%;
     max-width: 280px;
     text-align: center;
-  }
 }
-
+}
 .btn {
   font-family: var(--font-display);
   font-size: 0.85rem;
@@ -247,112 +212,93 @@
   color: var(--bg);
   font-weight: 700;
 }
-
 .btn:hover {
   background: #9BF3E4;
   color: var(--bg);
 }
-
     /* Diagram */
-    .diagram {
+.diagram {
       width: 100%;
       height: auto;
-    }
-
-    .diagram .node-label {
+}
+.diagram .node-label {
       font-family: var(--font-display);
       font-size: 10px;
       fill: var(--text-muted);
-    }
-
-    .diagram .hub-label {
+}
+.diagram .hub-label {
       font-family: var(--font-display);
       font-size: 11px;
       font-weight: 700;
       fill: var(--bg);
-    }
-
-    .diagram .link {
+}
+.diagram .link {
       stroke: var(--line-strong);
       stroke-width: 1.5;
       fill: none;
-    }
-
-    .diagram .pulse {
+}
+.diagram .pulse {
       stroke: var(--accent);
       stroke-width: 1.5;
       fill: none;
       stroke-dasharray: 4 6;
       animation: dash 6s linear infinite;
-    }
-
+}
     @keyframes dash {
       to {
         stroke-dashoffset: -100;
-      }
-    }
-
-    .diagram .node-box {
+}
+}
+.diagram .node-box {
       fill: var(--bg-panel-2);
       stroke: var(--line-strong);
       stroke-width: 1;
-    }
-
-    .diagram .hub {
+}
+.diagram .hub {
       fill: var(--accent);
-    }
-
+}
     section {
       padding: clamp(2.5rem, 6vw, 4rem) 0;
       border-top: 1px solid var(--line);
-    }
-
-    .section-head {
+}
+.section-head {
       margin-bottom: 2rem;
-    }
-
-    .section-head h2 {
+}
+.section-head h2 {
       font-size: clamp(1.35rem, 2.6vw, 1.7rem);
       margin-top: 0.6rem;
-    }
-
-    .bio p {
+}
+.bio p {
       max-width: 62ch;
       color: var(--text-muted);
-    }
-
-    .bio p strong {
+}
+.bio p strong {
       color: var(--text);
       font-weight: 600;
-    }
-
+}
     /* Skills */
-    .skills-grid {
+.skills-grid {
       display: grid;
       gap: 1.25rem;
       grid-template-columns: 1fr;
-    }
-
+}
     @media (min-width: 640px) {
-      .skills-grid {
+.skills-grid {
         grid-template-columns: 1fr 1fr;
-      }
-    }
-
-    .skill-card {
+}
+}
+.skill-card {
       background: var(--bg-panel);
       border: 1px solid var(--line);
       border-radius: var(--radius);
       padding: 1.5rem;
-    }
-
-    .skill-card h3 {
+}
+.skill-card h3 {
       font-size: 0.95rem;
       color: var(--accent);
       margin-bottom: 0.9rem;
-    }
-
-    .skill-card ul {
+}
+.skill-card ul {
       margin: 0;
       padding: 0;
       list-style: none;
@@ -361,58 +307,50 @@
       display: flex;
       flex-direction: column;
       gap: 0.5rem;
-    }
-
-    .skill-card li {
+}
+.skill-card li {
       padding-left: 1.1em;
       position: relative;
-    }
-
-    .skill-card li::before {
+}
+.skill-card li::before {
       content: "›";
       position: absolute;
       left: 0;
       top: 0;
       color: var(--accent-dim);
-    }
-
+}
     /* Case studies */
-    .cases {
+.cases {
       display: flex;
       flex-direction: column;
       gap: 1.25rem;
-    }
-
-    .case-card {
+}
+.case-card {
       background: var(--bg-panel);
       border: 1px solid var(--line);
       border-left: 3px solid var(--accent);
       border-radius: var(--radius);
       padding: 1.5rem 1.75rem;
-    }
-
-    .case-card .tag {
+}
+.case-card .tag {
       font-family: var(--font-display);
       font-size: 0.72rem;
       letter-spacing: 0.1em;
       color: var(--amber);
       text-transform: uppercase;
-    }
-
-    .case-card h3 {
+}
+.case-card h3 {
       font-size: 1.05rem;
       margin: 0.5rem 0 0.7rem;
       font-family: var(--font-body);
       font-weight: 600;
-    }
-
-    .case-card p {
+}
+.case-card p {
       color: var(--text-muted);
       margin: 0.35rem 0;
       font-size: 0.96rem;
-    }
-
-    .case-card .field-label {
+}
+.case-card .field-label {
       font-family: var(--font-display);
       font-size: 0.72rem;
       color: var(--text-muted);
@@ -421,41 +359,77 @@
       margin-right: 0.5em;
       font-weight: 700;
       text-decoration: underline;
-    }
-
-    .case-card hr {
+}
+.case-card hr {
   border: none;
   border-top: 1px solid var(--line);
   margin: 0.75rem 0;
 }
-
+    /* GitHub Activity */
+.activity-list {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+}
+.activity-item {
+      background: var(--bg-panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1rem 1.25rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      gap: 1rem;
+      flex-wrap: wrap;
+      font-size: 0.95rem;
+      color: var(--text-muted);
+}
+.activity-item a {
+      color: var(--text);
+      font-weight: 600;
+      text-decoration: none;
+}
+.activity-item a:hover {
+      color: var(--accent);
+}
+.activity-item time {
+      font-family: var(--font-display);
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      white-space: nowrap;
+}
+.activity-item.activity-status {
+      color: var(--text-muted);
+      font-family: var(--font-display);
+      font-size: 0.85rem;
+      border-style: dashed;
+      border-color: var(--line-strong);
+}
     /* Contact / footer */
     footer.site-footer {
       border-top: 1px solid var(--line);
       padding: clamp(2.5rem, 6vw, 3.5rem) 0 3rem;
-    }
-
+}
     footer .wrap {
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
       gap: 2rem;
       align-items: flex-start;
-    }
-
-    .copyright {
+}
+.copyright {
       color: var(--text-muted);
       font-size: 0.8rem;
       margin-top: 2.5rem;
       font-family: var(--font-display);
-    }
+}
   </style>
 </head>
-
 <body>
-
   <a class="skip-link" href="#main">Skip to content</a>
-
   <header class="site-header">
     <div class="wrap">
       <span class="name">Sam Derksen</span>
@@ -464,35 +438,32 @@
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Examples</a></li>
+          <li><a href="#activity">Activity</a></li>
         </ul>
       </nav>
     </div>
   </header>
-
   <main id="main">
-
     <section class="hero" aria-labelledby="hero-heading">
       <div class="wrap">
         <div>
           <span class="eyebrow">TeamDynamix - iPaaS &amp; Conversational AI expert</span>
           <h1 id="hero-heading">I connect systems that weren't built to talk to each other.</h1>
           <p class="lede">
-            I'm <strong>Sam Derksen</strong>, a technical consultant at TeamDynamix.
-            I build integrations, fix them when they break, and never stop looking for a improvements along the way.
+I'm <strong>Sam Derksen</strong>, a technical consultant at TeamDynamix.
+I build integrations, fix them when they break, and never stop looking for a improvements along the way.
           </p>
           <div class="actions">
             <a class="btn" href="#work">See work examples</a>
             <a class="btn" href="https://www.linkedin.com/in/sam-derksen" target="_blank">Connect with me</a>
           </div>
         </div>
-
         <div>
           <svg class="diagram" viewBox="0 0 400 340" role="img" aria-labelledby="diagram-title diagram-desc">
             <title id="diagram-title">Integration diagram</title>
             <desc id="diagram-desc">A central TeamDynamix iPaaS hub connected to six external systems: StatusPage,
-              SharePoint, ClickUp, Cisco, Jira, and Canvas, with a pulsing node feeding from the iPaaS
-              hub to StatusPage, Cisco, and Jira..</desc>
-
+SharePoint, ClickUp, Cisco, Jira, and Canvas, with a pulsing node feeding from the iPaaS
+hub to StatusPage, Cisco, and Jira..</desc>
             <!-- links -->
             <path class="link" d="M200,170 L80,60"></path>
             <path class="link" d="M200,170 L200,40"></path>
@@ -500,39 +471,30 @@
             <path class="link" d="M200,170 L60,230"></path>
             <path class="link" d="M200,170 L200,300"></path>
             <path class="link" d="M200,170 L340,230"></path>
-
             <!-- animated pulses along a few links -->
             <path class="pulse" d="M200,170 L80,60"></path>
             <path class="pulse" d="M200,170 L200,300"></path>
             <path class="pulse" d="M200,170 L340,230"></path>
-
             <!-- hub -->
             <circle class="hub" cx="200" cy="170" r="34"></circle>
             <text class="hub-label" x="200" y="174" text-anchor="middle">iPaaS</text>
-
             <!-- nodes -->
             <rect class="node-box" x="40" y="40" width="80" height="32" rx="3"></rect>
             <text class="node-label" x="80" y="60" text-anchor="middle">StatusPage</text>
-
             <rect class="node-box" x="160" y="12" width="80" height="32" rx="3"></rect>
             <text class="node-label" x="200" y="32" text-anchor="middle">SharePoint</text>
-
             <rect class="node-box" x="280" y="40" width="80" height="32" rx="3"></rect>
             <text class="node-label" x="320" y="60" text-anchor="middle">ClickUp</text>
-
             <rect class="node-box" x="16" y="214" width="88" height="32" rx="3"></rect>
             <text class="node-label" x="60" y="234" text-anchor="middle">Canvas</text>
-
             <rect class="node-box" x="160" y="280" width="80" height="32" rx="3"></rect>
             <text class="node-label" x="200" y="300" text-anchor="middle">Jira</text>
-
             <rect class="node-box" x="300" y="214" width="80" height="32" rx="3"></rect>
             <text class="node-label" x="340" y="234" text-anchor="middle">Cisco</text>
           </svg>
         </div>
       </div>
     </section>
-
     <section id="about" aria-labelledby="about-heading">
       <div class="wrap">
         <div class="section-head">
@@ -541,17 +503,16 @@
         </div>
         <div class="bio">
           <p>
-            I work in a technical support and consulting role at <strong>TeamDynamix</strong>, focused on our
+I work in a technical support and consulting role at <strong>TeamDynamix</strong>, focused on our
             <strong>iPaaS</strong> and <strong>Conversational AI (CAI)</strong> products. Most days, that means troubleshooting
-            why an iPaaS flow stopped working, providing best practice advise to customers, or tuning a VSA task so it handles a conversation effectively instead of dead-ending on the user.
+why an iPaaS flow stopped working, providing best practice advise to customers, or tuning a VSA task so it handles a conversation effectively instead of dead-ending on the user.
           </p>
           <p>
-            A large part of my role is meeting with customers in various industries, understanding what's not working for them, and crafting tailored solutions with the tools available to me.
+A large part of my role is meeting with customers in various industries, understanding what's not working for them, and crafting tailored solutions with the tools available to me.
           </p>
         </div>
       </div>
     </section>
-
     <section id="skills" aria-labelledby="skills-heading">
       <div class="wrap">
         <div class="section-head">
@@ -594,7 +555,6 @@
         </div>
       </div>
     </section>
-
     <section id="work" aria-labelledby="work-heading">
       <div class="wrap">
         <div class="section-head">
@@ -602,53 +562,131 @@
           <h2 id="work-heading">Automating Manual Tasks</h2>
         </div>
         <div class="cases">
-
           <article class="case-card">
             <span class="tag">Knowledge base articles and their review dates</span>
             <h3>Ensuring knowledge base articles are fresh and up-to-date</h3>
             <p><span class="field-label">Problem</span>An institution was relying on their staff to review each
-              knowledge base article and set a valid review date value until the next review cycle.</p>
+knowledge base article and set a valid review date value until the next review cycle.</p>
             <hr>
             <p><span class="field-label">Approach</span>I designed an iPaaS flow to find all articles with an empty or
-              upcoming review date, notify the article owner to review the article, and set the review date value to one
-              year in advance once completed.</p>
+upcoming review date, notify the article owner to review the article, and set the review date value to one
+year in advance once completed.</p>
             <hr>
             <p><span class="field-label">Outcome</span>Running once a day, this flow automatically relieves staff of
-              manual tracking and guarantees every knowledge base article stays current.</p>
+manual tracking and guarantees every knowledge base article stays current.</p>
           </article>
-
           <article class="case-card">
             <span class="tag">Ticketing systems and incident communication platforms</span>
             <h3>Connecting TeamDynamix Work Management and StatusPage</h3>
             <p><span class="field-label">Problem</span>When a major incident occured, an institution would initially
-              create a ticket in Work Management and then manually update their StatusPage with the incident details.
+create a ticket in Work Management and then manually update their StatusPage with the incident details.
             </p>
             <hr>
             <p><span class="field-label">Approach</span>Utilizing a 'ticket create' webhook in Work Management, I
-              designed an iPaaS flow to be triggered when a major incident ticket is created, gather all of the details
-              from the ticket, and post an incident on StatusPage containing the details from the ticket.</p>
+designed an iPaaS flow to be triggered when a major incident ticket is created, gather all of the details
+from the ticket, and post an incident on StatusPage containing the details from the ticket.</p>
             <hr>
             <p><span class="field-label">Outcome</span>By eliminating manual system-switching and duplicate work, this
-              workflow frees the institution to concentrate on an accurate major incident ticket and resolving the
-              problem.</p>
+workflow frees the institution to concentrate on an accurate major incident ticket and resolving the
+problem.</p>
           </article>
-
         </div>
       </div>
     </section>
-
+    <section id="activity" aria-labelledby="activity-heading">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow">GitHub Activity</span>
+          <h2 id="activity-heading">What I've been building</h2>
+        </div>
+        <ul class="activity-list" id="activity-list">
+          <li class="activity-item activity-status">Loading recent activity…</li>
+        </ul>
+      </div>
+    </section>
   </main>
-
   <footer class="site-footer">
     <div class="wrap">
       <p class="copyright">© <span id="year"></span> Sam Derksen.<br>Built with HTML, CSS, and JavaScript.</p>
     </div>
   </footer>
-
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+  <script>
+    const GITHUB_USERNAME = 'derksen-sam';
+    const activityList = document.getElementById('activity-list');
 
+    function describeEvent(event) {
+      const repoName = event.repo.name.split('/')[1] || event.repo.name;
+      const repoUrl = `https://github.com/${event.repo.name}`;
+      const link = `<a href="${repoUrl}" target="_blank" rel="noopener">${repoName}</a>`;
+
+      switch (event.type) {
+        case 'PushEvent': {
+          const count = event.payload.commits ? event.payload.commits.length : 1;
+          return `Pushed ${count} commit${count === 1 ? '' : 's'} to ${link}`;
+        }
+        case 'CreateEvent':
+          if (event.payload.ref_type === 'repository') {
+            return `Created repository ${link}`;
+          }
+          return `Created ${event.payload.ref_type} in ${link}`;
+        case 'PullRequestEvent':
+          return `${event.payload.action === 'opened' ? 'Opened' : 'Updated'} a pull request in ${link}`;
+        case 'IssuesEvent':
+          return `${event.payload.action === 'opened' ? 'Opened' : 'Updated'} an issue in ${link}`;
+        case 'WatchEvent':
+          return `Starred ${link}`;
+        case 'ForkEvent':
+          return `Forked ${link}`;
+        default:
+          return null;
+      }
+    }
+
+    function timeAgo(dateString) {
+      const seconds = Math.floor((new Date() - new Date(dateString)) / 1000);
+      const units = [
+        ['year', 31536000],
+        ['month', 2592000],
+        ['day', 86400],
+        ['hour', 3600],
+        ['minute', 60]
+      ];
+      for (const [name, secondsInUnit] of units) {
+        const value = Math.floor(seconds / secondsInUnit);
+        if (value >= 1) return `${value} ${name}${value === 1 ? '' : 's'} ago`;
+      }
+      return 'just now';
+    }
+
+    fetch(`https://api.github.com/users/${GITHUB_USERNAME}/events/public`)
+      .then(response => {
+        if (!response.ok) throw new Error('GitHub API request failed');
+        return response.json();
+      })
+      .then(events => {
+        const items = events
+          .map(event => ({ html: describeEvent(event), date: event.created_at }))
+          .filter(item => item.html)
+          .slice(0, 5);
+
+        if (items.length === 0) {
+          activityList.innerHTML = '<li class="activity-item activity-status">No recent public activity to show.</li>';
+          return;
+        }
+
+        activityList.innerHTML = items.map(item => `
+          <li class="activity-item">
+            <span>${item.html}</span>
+            <time datetime="${item.date}">${timeAgo(item.date)}</time>
+          </li>
+        `).join('');
+      })
+      .catch(() => {
+        activityList.innerHTML = '<li class="activity-item activity-status">Couldn\'t load recent activity right now.</li>';
+      });
+  </script>
 </body>
-
 </html>
