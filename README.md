@@ -28,7 +28,7 @@ This repo runs a few GitHub Actions workflows to keep the site in shape:
 
 - **HTML Validation** (`.github/workflows/html-validate.yml`) - currently only running when manually triggered, but able to run on every push and pull request. Checks all `.html` files at the repo root for structural issues (missing `alt` attributes, unclosed tags) via [HTMLHint](https://htmlhint.com/), and checks every link for breakage via [Lychee](https://github.com/lycheeverse/lychee).
 - **Lighthouse CI** (`.github/workflows/lighthouse.yml`) - manually triggered via the Actions tab ("Run workflow"). Audits every `.html` file for performance, accessibility, best practices, and SEO. Accessibility scores below 90 fail the check.
-- **Site Health Check** (`.github/workflows/site-health.yml`) — runs daily on a schedule (and can also be triggered manually), pinging the live site and failing the check if it doesn't respond with a 200 status.
+- **Site Health Check** (`.github/workflows/site-health.yml`) — runs daily on a schedule (and can also be triggered manually), pinging the live site and failing the check if it doesn't respond with a 200 status code.
 - **Dependabot** (`.github/dependabot.yml`) - checks weekly for newer versions of the GitHub Actions used in these workflows and opens a pull request when one's available.
 
 ## Deploying updates (GitHub Pages)
