@@ -5,7 +5,7 @@
 [![Site Health Check](https://github.com/derksen-sam/derksen-sam/actions/workflows/site-health.yml/badge.svg)](https://github.com/derksen-sam/derksen-sam/actions/workflows/site-health.yml)
 [![License: MIT](https://img.shields.io/github/license/derksen-sam/derksen-sam)](LICENSE)
 
-A personal site built to learn GitHub's hosting and automation features, with a landing page and a dedicated page about my work at TeamDynamix.
+A personal site built to learn GitHub's hosting and automation features, with a landing page, a dedicated page about my work at TeamDynamix, and a themed 404 page.
 
 **Live site:** [https://derksen-sam.github.io/derksen-sam/](https://derksen-sam.github.io/derksen-sam/)
 
