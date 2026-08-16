@@ -375,49 +375,6 @@ a.site-header-home:hover {
   border-top: 1px solid var(--line);
   margin: 0.75rem 0;
 }
-    /* GitHub Activity */
-.activity-list {
-      list-style: none;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      gap: 0.75rem;
-}
-.activity-item {
-      background: var(--bg-panel);
-      border: 1px solid var(--line);
-      border-radius: var(--radius);
-      padding: 1rem 1.25rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: baseline;
-      gap: 1rem;
-      flex-wrap: wrap;
-      font-size: 0.95rem;
-      color: var(--text-muted);
-}
-.activity-item a {
-      color: var(--text);
-      font-weight: 600;
-      text-decoration: none;
-}
-.activity-item a:hover {
-      color: var(--accent);
-}
-.activity-item time {
-      font-family: var(--font-display);
-      font-size: 0.78rem;
-      color: var(--text-muted);
-      white-space: nowrap;
-}
-.activity-item.activity-status {
-      color: var(--text-muted);
-      font-family: var(--font-display);
-      font-size: 0.85rem;
-      border-style: dashed;
-      border-color: var(--line-strong);
-}
     /* Contact / footer */
     footer.site-footer {
       border-top: 1px solid var(--line);
@@ -448,7 +405,6 @@ a.site-header-home:hover {
           <li><a href="#about">About</a></li>
           <li><a href="#skills">Skills</a></li>
           <li><a href="#work">Examples</a></li>
-          <li><a href="#activity">Activity</a></li>
         </ul>
       </nav>
     </div>
@@ -603,17 +559,6 @@ problem.</p>
         </div>
       </div>
     </section>
-    <section id="activity" aria-labelledby="activity-heading">
-      <div class="wrap">
-        <div class="section-head">
-          <span class="eyebrow">GitHub Activity</span>
-          <h2 id="activity-heading">What I've been building</h2>
-        </div>
-        <ul class="activity-list" id="activity-list">
-          <li class="activity-item activity-status">Loading recent activity…</li>
-        </ul>
-      </div>
-    </section>
   </main>
   <footer class="site-footer">
     <div class="wrap">
@@ -622,81 +567,6 @@ problem.</p>
   </footer>
   <script>
     document.getElementById('year').textContent = new Date().getFullYear();
-  </script>
-  <script>
-    const GITHUB_USERNAME = 'derksen-sam';
-    const activityList = document.getElementById('activity-list');
-
-    function describeEvent(event) {
-      const repoName = event.repo.name.split('/')[1] || event.repo.name;
-      const repoUrl = `https://github.com/${event.repo.name}`;
-      const link = `<a href="${repoUrl}" target="_blank" rel="noopener">${repoName}</a>`;
-
-      switch (event.type) {
-        case 'PushEvent': {
-          const count = event.payload.commits ? event.payload.commits.length : 1;
-          return `Pushed ${count} commit${count === 1 ? '' : 's'} to ${link}`;
-        }
-        case 'CreateEvent':
-          if (event.payload.ref_type === 'repository') {
-            return `Created repository ${link}`;
-          }
-          return `Created ${event.payload.ref_type} in ${link}`;
-        case 'PullRequestEvent':
-          return `${event.payload.action === 'opened' ? 'Opened' : 'Updated'} a pull request in ${link}`;
-        case 'IssuesEvent':
-          return `${event.payload.action === 'opened' ? 'Opened' : 'Updated'} an issue in ${link}`;
-        case 'WatchEvent':
-          return `Starred ${link}`;
-        case 'ForkEvent':
-          return `Forked ${link}`;
-        default:
-          return null;
-      }
-    }
-
-    function timeAgo(dateString) {
-      const seconds = Math.floor((new Date() - new Date(dateString)) / 1000);
-      const units = [
-        ['year', 31536000],
-        ['month', 2592000],
-        ['day', 86400],
-        ['hour', 3600],
-        ['minute', 60]
-      ];
-      for (const [name, secondsInUnit] of units) {
-        const value = Math.floor(seconds / secondsInUnit);
-        if (value >= 1) return `${value} ${name}${value === 1 ? '' : 's'} ago`;
-      }
-      return 'just now';
-    }
-
-    fetch(`https://api.github.com/users/${GITHUB_USERNAME}/events/public`)
-      .then(response => {
-        if (!response.ok) throw new Error('GitHub API request failed');
-        return response.json();
-      })
-      .then(events => {
-        const items = events
-          .map(event => ({ html: describeEvent(event), date: event.created_at }))
-          .filter(item => item.html)
-          .slice(0, 5);
-
-        if (items.length === 0) {
-          activityList.innerHTML = '<li class="activity-item activity-status">No recent public activity to show.</li>';
-          return;
-        }
-
-        activityList.innerHTML = items.map(item => `
-          <li class="activity-item">
-            <span>${item.html}</span>
-            <time datetime="${item.date}">${timeAgo(item.date)}</time>
-          </li>
-        `).join('');
-      })
-      .catch(() => {
-        activityList.innerHTML = '<li class="activity-item activity-status">Couldn\'t load recent activity right now.</li>';
-      });
   </script>
 </body>
 </html>
