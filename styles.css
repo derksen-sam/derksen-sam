@@ -250,6 +250,55 @@ a.site-header-home:hover {
   }
 }
 
+/* --- index.html: GitHub activity feed --- */
+.activity-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.activity-item {
+  background: var(--bg-panel);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 1rem;
+  flex-wrap: wrap;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+}
+
+.activity-item a {
+  color: var(--text);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.activity-item a:hover {
+  color: var(--accent);
+}
+
+.activity-item time {
+  font-family: var(--font-display);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+
+.activity-item.activity-status {
+  color: var(--text-muted);
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  border-style: dashed;
+  border-color: var(--line-strong);
+}
+
 /* --- Buttons --- */
 .btn {
   font-family: var(--font-display);
