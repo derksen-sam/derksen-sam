@@ -18,7 +18,7 @@ A personal site built to learn GitHub's hosting and automation features, with a 
 ## Tech stack
 
 - Plain HTML, CSS, and a small amount of JavaScript - no frameworks, no build step
- - Vanilla JavaScript powers the live GitHub activity feed and the dynamic copyright year
+  - Vanilla JavaScript powers the live GitHub activity feed and the dynamic copyright year
 - [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) via Google Fonts (external dependency, loaded via `<link>`)
 - A single shared stylesheet (`styles.css`) is linked from all three pages, so the browser caches it once and reuses it across the site.
 
