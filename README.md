@@ -12,13 +12,14 @@ A personal site built to learn GitHub's hosting and automation features, with a 
 ## What's on the site
  
 - **Landing page** (`index.html`) - a brief intro and a live feed of my most recent public GitHub activity, fetched client-side from the GitHub events API with a fallback if the request fails.
-- **Work page** (`work.html`) - details about my current role as a Technical Support Consultant at TeamDynamix.
+- **Work page** (`work.html`) - details about my current role as a Technical Support Consultant at TeamDynamix, including skills and a few example solutions I've built.
+- **Custom 404** (`404.html`) - a themed not-found page.
 
 ## Tech stack
 
 - Plain HTML, CSS, and a small amount of vanilla JavaScript - no frameworks, no build step
 - [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) via Google Fonts (external dependency, loaded via `<link>`)
-- Self-contained HTML files - all CSS and JS are inline, no build step
+- A shared external stylesheet (`styles.css`) links from both `index.html` and `work.html`, so the browser caches it once and reuses it across pages. `404.html` keeps its own inline styles, since it's a standalone layout that reuses some class names with different values.
 - Vanilla JavaScript powers the live GitHub activity feed and the dynamic copyright year
 
 ## Automation
@@ -41,8 +42,9 @@ This repo runs a few GitHub Actions workflows to keep the site in shape:
 ```
 .
 ├── index.html                          # landing page — intro + live GitHub activity feed
-├── work.html                           # TeamDynamix role details
+├── work.html                           # TeamDynamix role, skills, and example solutions
 ├── 404.html                            # custom not-found page
+├── styles.css                          # shared stylesheet for index.html and work.html
 ├── lighthouserc.json                   # Lighthouse CI configuration
 ├── .github/
 │   ├── workflows/
