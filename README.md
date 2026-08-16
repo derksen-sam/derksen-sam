@@ -17,10 +17,10 @@ A personal site built to learn GitHub's hosting and automation features, with a 
 
 ## Tech stack
 
-- Plain HTML, CSS, and a small amount of vanilla JavaScript - no frameworks, no build step
+- Plain HTML, CSS, and a small amount of JavaScript - no frameworks, no build step
+ - Vanilla JavaScript powers the live GitHub activity feed and the dynamic copyright year
 - [JetBrains Mono](https://fonts.google.com/specimen/JetBrains+Mono) via Google Fonts (external dependency, loaded via `<link>`)
-- A shared external stylesheet (`styles.css`) links from both `index.html` and `work.html`, so the browser caches it once and reuses it across pages. `404.html` keeps its own inline styles, since it's a standalone layout that reuses some class names with different values.
-- Vanilla JavaScript powers the live GitHub activity feed and the dynamic copyright year
+- A single shared stylesheet (`styles.css`) is linked from all three pages, so the browser caches it once and reuses it across the site.
 
 ## Automation
 
@@ -43,8 +43,8 @@ This repo runs a few GitHub Actions workflows to keep the site in shape:
 .
 ├── index.html                          # landing page — intro + live GitHub activity feed
 ├── work.html                           # TeamDynamix role, skills, and example solutions
-├── 404.html                            # custom not-found page
-├── styles.css                          # shared stylesheet for index.html and work.html
+├── 404.html                            # custom not-found page (nf- prefixed styles)
+├── styles.css                          # shared stylesheet for all three HTML pages
 ├── lighthouserc.json                   # Lighthouse CI configuration
 ├── .github/
 │   ├── workflows/
