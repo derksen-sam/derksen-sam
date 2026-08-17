@@ -109,6 +109,7 @@
   </script>
   <script>
     const GITHUB_USERNAME = 'derksen-sam';
+    const TARGET_REPO = 'derksen-sam/derksen-sam'; // owner/repo
     const activityList = document.getElementById('activity-list');
 
     function describeEvent(event) {
@@ -161,7 +162,8 @@
         return response.json();
       })
       .then(events => {
-        const items = events
+          const items = events
+          .filter(event => event.repo.name === TARGET_REPO)
           .map(event => ({html: describeEvent(event), date: event.created_at}))
           .filter(item => item.html)
           .slice(0, 5);
